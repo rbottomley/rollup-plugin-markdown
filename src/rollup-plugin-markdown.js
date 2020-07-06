@@ -1,13 +1,16 @@
 const { createFilter } = require('rollup-pluginutils')
 const path = require('path')
-const matter = require('gray-matter')
-const showdown = require('showdown')
+const fm = require('front-matter')
+const markdownIt = require('markdown-it')
 
-const converter = new showdown.Converter({
-  metadata: true,
-})
+// markdown-it plugins
+const markdownItAttrs = require('@gerhobbelt/markdown-it-attrs')
 
-converter.setFlavor('github')
+const md = new markdownIt({
+  html: true,
+  typographer: true,
+  breaks: true
+}).use(markdownItAttrs)
 
 const markdownPlugin = (options = {}) => {
   const filter = createFilter(options.include, options.exclude)
@@ -21,14 +24,14 @@ const markdownPlugin = (options = {}) => {
 
       if (extension !== '.md') return
 
-      const matterResult = matter(code)
-      const html = converter.makeHtml(matterResult.content)
+      const frontMatter = fm(code)
+      const html = md.render(frontMatter.body)
 
       const exportFromModule = JSON.stringify({
-        html,
-        metadata: matterResult.data,
+        ...frontMatter.attributes,
         filename: path.basename(id),
         path: id,
+        html: html,
       })
 
       return {

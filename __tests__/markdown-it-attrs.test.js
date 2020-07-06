@@ -42,16 +42,12 @@ const bundleFileAndGetCode = async rollupConfig => {
 
 it('returns a module for the markdown file', async () => {
   const code = await bundleFileAndGetCode({
-    input: 'fixtures/test.md',
+    input: 'fixtures/markdown-it-attrs.md',
     plugins: [markdownPlugin()],
   })
 
   const requiredModule = requireFromString(code)
 
   expect(requiredModule.html).toMatchSnapshot()
-  expect(requiredModule.layout).toEqual('post')
-  expect(requiredModule.title).toEqual('Avoiding recursive useEffect hooks in React')
-  expect(requiredModule.intro).toEqual(expect.any(String))
-  expect(requiredModule.filename).toEqual('test.md')
-  expect(requiredModule.path).toEqual(path.resolve(path.join(__dirname, 'fixtures/test.md')))
+  expect(requiredModule.path).toEqual(path.resolve(path.join(__dirname, 'fixtures/markdown-it-attrs.md')))
 })

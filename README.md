@@ -4,15 +4,18 @@
 
 A Rollup plugin to parse Markdown files.
 
-- [Showdown][showdown] is used to parse the Markdown
-- [Gray Matter][gray-matter] is used to parse front-matter from the markdown file.
+- [Markdown-it][markdown-it] is used to parse the Markdown
+- [Front Matter][front-matter] is used to parse front-matter from the markdown file.
+
+Plugins:
+- [Markdown-it-attrs][markdown-it-attrs] 
 
 ## Install
 
 ```
-npm install --save-dev @jackfranklin/rollup-plugin-markdown
+npm install --save-dev git:rbottomley/rollup-plugin-markdown
 
-yarn add --dev @jackfranklin/rollup-plugin-markdown
+yarn add --dev git:rbottomley/rollup-plugin-markdown
 ```
 
 ## Example module output
@@ -22,14 +25,14 @@ import blogPost from './blog-post.md'
 
 // from this import you get:
 blogPost.html // the parsed HTML
-blogPost.metadata // a JS object of the front-matter
+blogPost.[frontmatter keys] // the front-matter
 blogPost.filename // blog-post.md - the filename that was imported
 ```
 
 ## Rollup configuration
 
 ```js
-import markdown from '@jackfranklin/rollup-plugin-markdown'
+import markdown from 'rollup-plugin-markdown'
 
 export default {
   input: 'your-app.js',
@@ -41,13 +44,19 @@ You can pass in two options: `include` and `exclude`, which are globs to limit w
 
 The plugin will only parse `.md` files.
 
-[showdown]: https://github.com/showdownjs/showdown
-[gray-matter]: https://github.com/jonschlinkert/gray-matter
- 
+[markdown-it]: https://github.com/markdown-it/markdown-it
+[front-matter]: https://github.com/jxson/front-matter
+[markdown-it-attrs]: https://github.com/GerHobbelt/markdown-it-attrs#readme
+
 ## Changelog
 
-#### 0.2.0
+### 1.0.0
+- change markdown processor to markdown-it
+- change front matter processor to front-matter
+- add markdown-it-attrs plugin
+
+### 0.2.0
 - expose full path to Markdown file as `.path` from the import.
 
-#### 0.1.0
+### 0.1.0
 - Initial release
