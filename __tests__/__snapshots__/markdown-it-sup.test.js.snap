@@ -1,0 +1,6 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`returns a module for the markdown file 1`] = `
+"<p>This is 29<sup>th</sup> with a superscipt using the <code>sup</code> element.</p>
+"
+`;

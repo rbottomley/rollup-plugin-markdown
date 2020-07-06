@@ -8,7 +8,12 @@ A Rollup plugin to parse Markdown files.
 - [Front Matter][front-matter] is used to parse front-matter from the markdown file.
 
 Plugins:
-- [Markdown-it-attrs][markdown-it-attrs] 
+- [Markdown-it-attrs][markdown-it-attrs]
+- [Markdown-it-kbd][markdown-it-kbd]
+- [Markdown-it-mark][markdown-it-mark]
+- [Markdown-it-small][markdown-it-small]
+- [Markdown-it-sub][markdown-it-sub]
+- [Markdown-it-sup][markdown-it-sup]
 
 ## Install
 
@@ -46,7 +51,12 @@ The plugin will only parse `.md` files.
 
 [markdown-it]: https://github.com/markdown-it/markdown-it
 [front-matter]: https://github.com/jxson/front-matter
-[markdown-it-attrs]: https://github.com/GerHobbelt/markdown-it-attrs#readme
+[markdown-it-attrs]: https://github.com/GerHobbelt/markdown-it-attrs
+[markdown-it-kbd]: https://github.com/jGleitz/markdown-it-kbd
+[markdown-it-mark]: https://github.com/markdown-it/markdown-it-mark
+[markdown-it-small]: https://github.com/lwg529/markdown-it-small
+[markdown-it-sub]: https://github.com/markdown-it/markdown-it-sub
+[markdown-it-sup]: https://github.com/markdown-it/markdown-it-sup
 
 ## Changelog
 

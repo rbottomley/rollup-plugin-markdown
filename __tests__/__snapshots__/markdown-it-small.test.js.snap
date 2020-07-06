@@ -1,0 +1,6 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`returns a module for the markdown file 1`] = `
+"<p>This is <small>small text</small> using the <code>small</code> element.</p>
+"
+`;

@@ -5,12 +5,24 @@ const markdownIt = require('markdown-it')
 
 // markdown-it plugins
 const markdownItAttrs = require('@gerhobbelt/markdown-it-attrs')
+const markdownItMark = require('markdown-it-mark')
+const markdownItSup = require('markdown-it-sup')
+const markdownItSub = require('markdown-it-sub')
+const markdownItSmall = require('markdown-it-small')
+const markdownItKbd = require('markdown-it-kbd')
 
 const md = new markdownIt({
   html: true,
   typographer: true,
   breaks: true
-}).use(markdownItAttrs)
+}).
+  use(markdownItAttrs).
+  use(markdownItKbd).
+  use(markdownItMark).
+  use(markdownItSup).
+  use(markdownItSub).
+  use(markdownItSmall).
+  use(markdownItKbd)
 
 const markdownPlugin = (options = {}) => {
   const filter = createFilter(options.include, options.exclude)
