@@ -1,8 +1,8 @@
 {
   "name": "rollup-plugin-markdown",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Parse markdown files and import them with Rollup",
-  "author": "Jack Franklin",
+  "author": "Jack Franklin, Robert Bottomley",
   "license": "MIT",
   "main": "src/rollup-plugin-markdown.js",
   "scripts": {
