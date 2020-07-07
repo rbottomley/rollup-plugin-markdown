@@ -21,9 +21,9 @@
     "rollup": "^2.19.0"
   },
   "dependencies": {
-    "@gerhobbelt/markdown-it-attrs": "^3.0.3-19",
     "front-matter": "^4.0.2",
     "markdown-it": "^11.0.0",
+    "markdown-it-attrs": "github:rbottomley/markdown-it-attrs",
     "markdown-it-kbd": "^2.2.0",
     "markdown-it-mark": "^3.0.0",
     "markdown-it-small": "^1.0.0",
