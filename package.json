@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-markdown",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "Parse markdown files and import them with Rollup",
   "author": "Jack Franklin, Robert Bottomley",
   "license": "MIT",
@@ -18,7 +18,8 @@
   ],
   "devDependencies": {
     "jest": "^26.1.0",
-    "rollup": "^2.19.0"
+    "rollup": "^2.19.0",
+    "rollup-plugin-markdown": "github:rbottomley/rollup-plugin-markdown"
   },
   "dependencies": {
     "front-matter": "^4.0.2",
