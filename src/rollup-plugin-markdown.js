@@ -41,7 +41,7 @@ const markdownPlugin = (options = {}) => {
 
       const exportFromModule = JSON.stringify({
         ...frontMatter.attributes,
-        filename: path.basename(id),
+        slug: path.basename(id, '.md'),
         path: id,
         html: html,
       })

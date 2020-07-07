@@ -31,7 +31,7 @@ import blogPost from './blog-post.md'
 // from this import you get:
 blogPost.html // the parsed HTML
 blogPost.[frontmatter keys] // the front-matter
-blogPost.filename // blog-post.md - the filename that was imported
+blogPost.slug // blog-post - the base of the filename that was imported
 ```
 
 ## Rollup configuration
@@ -59,6 +59,9 @@ The plugin will only parse `.md` files.
 [markdown-it-sup]: https://github.com/markdown-it/markdown-it-sup
 
 ## Changelog
+
+### 2.0.0
+- change filename key to slug and only return the basename sans extension.
 
 ### 1.1.0
 - add more markdown-it plugins

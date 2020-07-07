@@ -52,6 +52,6 @@ it('returns a module for the markdown file', async () => {
   expect(requiredModule.layout).toEqual('post')
   expect(requiredModule.title).toEqual('Avoiding recursive useEffect hooks in React')
   expect(requiredModule.intro).toEqual(expect.any(String))
-  expect(requiredModule.filename).toEqual('test.md')
+  expect(requiredModule.slug).toEqual('test')
   expect(requiredModule.path).toEqual(path.resolve(path.join(__dirname, 'fixtures/test.md')))
 })
