@@ -60,6 +60,9 @@ The plugin will only parse `.md` files.
 
 ## Changelog
 
+### 1.1.0
+- add more markdown-it plugins
+
 ### 1.0.0
 - change markdown processor to markdown-it
 - change front matter processor to front-matter
