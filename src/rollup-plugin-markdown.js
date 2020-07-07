@@ -8,7 +8,6 @@ const markdownItAttrs = require('markdown-it-attrs')
 const markdownItMark = require('markdown-it-mark')
 const markdownItSup = require('markdown-it-sup')
 const markdownItSub = require('markdown-it-sub')
-const markdownItSmall = require('markdown-it-small')
 const markdownItKbd = require('markdown-it-kbd')
 
 const md = new markdownIt({
@@ -21,7 +20,6 @@ const md = new markdownIt({
   use(markdownItMark).
   use(markdownItSup).
   use(markdownItSub).
-  use(markdownItSmall).
   use(markdownItKbd)
 
 const markdownPlugin = (options = {}) => {

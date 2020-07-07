@@ -11,7 +11,6 @@ Plugins:
 - [Markdown-it-attrs][markdown-it-attrs]
 - [Markdown-it-kbd][markdown-it-kbd]
 - [Markdown-it-mark][markdown-it-mark]
-- [Markdown-it-small][markdown-it-small]
 - [Markdown-it-sub][markdown-it-sub]
 - [Markdown-it-sup][markdown-it-sup]
 
@@ -54,11 +53,13 @@ The plugin will only parse `.md` files.
 [markdown-it-attrs]: https://github.com/GerHobbelt/markdown-it-attrs
 [markdown-it-kbd]: https://github.com/jGleitz/markdown-it-kbd
 [markdown-it-mark]: https://github.com/markdown-it/markdown-it-mark
-[markdown-it-small]: https://github.com/lwg529/markdown-it-small
 [markdown-it-sub]: https://github.com/markdown-it/markdown-it-sub
 [markdown-it-sup]: https://github.com/markdown-it/markdown-it-sup
 
 ## Changelog
+
+### 2.1.0
+- remove markdown-it-small, conflicts with en dash typography option.
 
 ### 2.0.0
 - change filename key to slug and only return the basename sans extension.
