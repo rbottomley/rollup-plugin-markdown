@@ -4,7 +4,7 @@ const fm = require('front-matter')
 const markdownIt = require('markdown-it')
 
 // markdown-it plugins
-const markdownItAttrs = require('@gerhobbelt/markdown-it-attrs')
+const markdownItAttrs = require('markdown-it-attrs')
 const markdownItMark = require('markdown-it-mark')
 const markdownItSup = require('markdown-it-sup')
 const markdownItSub = require('markdown-it-sub')
