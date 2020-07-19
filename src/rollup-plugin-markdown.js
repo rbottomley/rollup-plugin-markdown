@@ -9,6 +9,7 @@ const markdownItMark = require('markdown-it-mark')
 const markdownItSup = require('markdown-it-sup')
 const markdownItSub = require('markdown-it-sub')
 const markdownItKbd = require('markdown-it-kbd')
+const markdownItHL = require('markdown-it-highlightjs')
 
 const md = new markdownIt({
   html: true,
@@ -20,7 +21,8 @@ const md = new markdownIt({
   use(markdownItMark).
   use(markdownItSup).
   use(markdownItSub).
-  use(markdownItKbd)
+  use(markdownItKbd).
+  use(markdownItHL)
 
 const markdownPlugin = (options = {}) => {
   const filter = createFilter(options.include, options.exclude)
