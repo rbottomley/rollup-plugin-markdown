@@ -1,5 +1,5 @@
 {
-  "name": "rollup-plugin-markdown",
+  "name": "@rbottomley/rollup-plugin-markdown",
   "version": "2.3.0",
   "description": "Parse markdown files and import them with Rollup",
   "author": "Jack Franklin, Robert Bottomley",
@@ -13,6 +13,10 @@
     "markdown-it",
     "rollup"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rbottomley/rollup-plugin-markdown.git"
+  },
   "files": [
     "src/"
   ],
@@ -21,8 +25,8 @@
     "rollup": "^2.19.0"
   },
   "dependencies": {
-    "@rbottomley/markdown-it-attrs": "^3.0.3-22",
-    "@rbottomley/markdown-it-figure": "^1.0.0",
+    "@rbottomley/markdown-it-attrs": "github:rbottomley/markdown-it-attrs",
+    "@rbottomley/markdown-it-figure": "github:rbottomley/markdown-it-figure",
     "front-matter": "^4.0.2",
     "markdown-it": "^11.0.0",
     "markdown-it-highlightjs": "^3.2.0",
