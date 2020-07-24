@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`returns a module for the markdown file 1`] = `
+"<p><figure><img src=\\"/url/to/image.png\\" /><figcaption>Caption text</figcaption></figure></p>
+<p><figure id=\\"figure-1234\\"><img src=\\"/url/to/image.jpg\\" alt=\\"Alt Text\\"/><figcaption><span class=\\"figure-id\\">1234: </span>More caption text</figcaption></figure></p>
+"
+`;

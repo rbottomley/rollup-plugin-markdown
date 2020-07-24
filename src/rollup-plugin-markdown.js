@@ -4,12 +4,13 @@ const fm = require('front-matter')
 const markdownIt = require('markdown-it')
 
 // markdown-it plugins
-const markdownItAttrs = require('markdown-it-attrs')
+const markdownItAttrs = require('@rbottomley/markdown-it-attrs')
 const markdownItMark = require('markdown-it-mark')
 const markdownItSup = require('markdown-it-sup')
 const markdownItSub = require('markdown-it-sub')
 const markdownItKbd = require('markdown-it-kbd')
 const markdownItHL = require('markdown-it-highlightjs')
+const markdownItFigure = require('@rbottomley/markdown-it-figure')
 
 const md = new markdownIt({
   html: true,
@@ -22,7 +23,8 @@ const md = new markdownIt({
   use(markdownItSup).
   use(markdownItSub).
   use(markdownItKbd).
-  use(markdownItHL)
+  use(markdownItHL).
+  use(markdownItFigure)
 
 const markdownPlugin = (options = {}) => {
   const filter = createFilter(options.include, options.exclude)
