@@ -2,12 +2,15 @@
   "name": "@rbottomley/rollup-plugin-markdown",
   "version": "2.3.0",
   "description": "Parse markdown files and import them with Rollup",
-  "author": "Jack Franklin, Robert Bottomley",
+  "author": "Jack Franklin",
   "license": "MIT",
   "main": "src/rollup-plugin-markdown.js",
   "scripts": {
     "test": "jest"
   },
+  "contributors": [
+    "Robert Bottomley <rbottomley@google.com>"
+  ],
   "keywords": [
     "markdown",
     "markdown-it",
