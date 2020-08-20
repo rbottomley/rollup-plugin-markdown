@@ -62,6 +62,9 @@ The plugin will only parse `.md` files.
 
 ## Changelog
 
+### 2.3.1
+- update dependencies.
+
 ### 2.3.0
 - add markdown-it-figure.
 
