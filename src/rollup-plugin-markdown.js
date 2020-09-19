@@ -11,6 +11,7 @@ const markdownItSub = require('markdown-it-sub')
 const markdownItKbd = require('markdown-it-kbd')
 const markdownItHL = require('markdown-it-highlightjs')
 const markdownItFigure = require('@rbottomley/markdown-it-figure')
+const markdownItDeflist = require('markdown-it-deflist')
 
 const md = new markdownIt({
   html: true,
@@ -24,7 +25,8 @@ const md = new markdownIt({
   use(markdownItSub).
   use(markdownItKbd).
   use(markdownItHL).
-  use(markdownItFigure)
+  use(markdownItFigure).
+  use(markdownItDeflist)
 
 const markdownPlugin = (options = {}) => {
   const filter = createFilter(options.include, options.exclude)

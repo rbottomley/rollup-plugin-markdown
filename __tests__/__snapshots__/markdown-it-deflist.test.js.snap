@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`returns a module for the markdown file 1`] = `
+"<p>Filler text.</p>
+<dl>
+<dt>Term 1</dt>
+<dd>Definition 1.</dd>
+<dt>Term 2</dt>
+<dd>Definition 2.</dd>
+</dl>
+<p>More filler text.</p>
+"
+`;

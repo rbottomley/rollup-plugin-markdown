@@ -9,6 +9,7 @@ A Rollup plugin to parse Markdown files.
 
 Plugins:
 - [Markdown-it-attrs][markdown-it-attrs]
+- [Markdown-it-deflist][markdown-it-deflist]
 - [Markdown-it-figure][markdown-it-figure]
 - [Markdown-it-highlightjs][markdown-it-highlightjs]
 - [Markdown-it-kbd][markdown-it-kbd]
@@ -53,6 +54,7 @@ The plugin will only parse `.md` files.
 [markdown-it]: https://github.com/markdown-it/markdown-it
 [front-matter]: https://github.com/jxson/front-matter
 [markdown-it-attrs]: https://github.com/rbottomley/markdown-it-attrs
+[markdown-it-deflist]: https://github.com/markdown-it/markdown-it-deflist
 [markdown-it-figure]: https://github.com/rbottomley/markdown-it-figure
 [markdown-it-highlightjs]: https://github.com/valeriangalliat/markdown-it-highlightjs
 [markdown-it-kbd]: https://github.com/jGleitz/markdown-it-kbd
@@ -61,6 +63,10 @@ The plugin will only parse `.md` files.
 [markdown-it-sup]: https://github.com/markdown-it/markdown-it-sup
 
 ## Changelog
+
+### 2.4.0
+- add markdown-it-deflist.
+- update dependencies.
 
 ### 2.3.1
 - update dependencies.

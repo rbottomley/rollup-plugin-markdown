@@ -1,6 +1,6 @@
 {
   "name": "@rbottomley/rollup-plugin-markdown",
-  "version": "2.3.1",
+  "version": "2.4.0",
   "description": "Parse markdown files and import them with Rollup",
   "author": "Jack Franklin",
   "license": "MIT",
@@ -32,6 +32,7 @@
     "@rbottomley/markdown-it-figure": "github:rbottomley/markdown-it-figure",
     "front-matter": "^4.0.2",
     "markdown-it": "^11.0.0",
+    "markdown-it-deflist": "^2.1.0",
     "markdown-it-highlightjs": "^3.2.0",
     "markdown-it-kbd": "^2.2.0",
     "markdown-it-mark": "^3.0.0",
