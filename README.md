@@ -98,7 +98,7 @@ Create `kbd` element from double square brackets, such as:
 Keycaps are rendered via nested `kbd` elements (per the spec):
 
 [[[[Shift]]+[[F3]]]]
-i
+
 ### "markdown-it-mark" plugin
 
 Create `mark` element from double equals:
