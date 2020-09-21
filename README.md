@@ -51,6 +51,72 @@ You can pass in two options: `include` and `exclude`, which are globs to limit w
 
 The plugin will only parse `.md` files.
 
+## Markdown options
+
+See the markdown-it and each plugin documentation for complete information. The "typography" option supports these replacements:
+
+* Two hypens becomes an en dash: "--" to "–"
+* Three hyphens becomes an em dash: "---" to "—"
+* Single and double quotes converted to curly quotes
+* "(c)" to "©"
+* "(r)" to "®"
+* "(p)" to "§"
+* "(tm)" to "™"
+* "..." and ".." to "…"
+* "+-" to "±"
+
+The "breaks" option honors line breaks.
+
+### "markdown-it-attrs" plugin
+
+Add classes, IDs and attributes to your markdown with {.class #id attr=value attr2="spaced value"} curly brackets, similar to pandoc's header attributes.
+
+### "markdown-it-deflist" plugin
+
+Create a definition list from:
+
+Term
+
+: definiton
+
+### "markdown-it-figure" plugin
+
+Create figures with:
+
+#1234[Caption](/url/to/image.png [Alt Text])
+
+### "markdown-it-highlightjs" plugin
+
+Use highlight.js to highlight code blocks.
+
+### "markdown-it-kbd" plugin
+
+Create `kbd` element from double square brackets, such as:
+
+[[dir c:]]
+
+Keycaps are rendered via nested `kbd` elements (per the spec):
+
+[[[[Shift]]+[[F3]]]]
+i
+### "markdown-it-mark" plugin
+
+Create `mark` element from double equals:
+
+==highlighted text==
+
+### "markdown-it-sub" plugin
+
+Create `sub` element from tildes:
+
+H~2~O
+
+### "markdown-it-sup" plugin
+
+Create `sup` element from circumflexes:
+
+29^th^
+
 [markdown-it]: https://github.com/markdown-it/markdown-it
 [front-matter]: https://github.com/jxson/front-matter
 [markdown-it-attrs]: https://github.com/rbottomley/markdown-it-attrs
