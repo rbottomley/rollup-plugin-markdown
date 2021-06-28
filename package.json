@@ -24,7 +24,7 @@
     "src/"
   ],
   "devDependencies": {
-    "jest": "^26.1.0",
+    "jest": "^27.0.6",
     "rollup": "^2.19.0"
   },
   "dependencies": {
